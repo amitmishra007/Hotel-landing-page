@@ -12,9 +12,11 @@
 }
 #navbar {
   background: #333333;
-  /* width: 1210.4px; */
-  height: 67.2px;
+  /* height: 67.2px; */
 }
+/* .container {
+  width: 80vw;
+} */
 .container a {
   font-size: 24px;
   color: #ffffff;
@@ -51,7 +53,7 @@
   color: var(--main-color);
 }
 #showcase {
-  height: 600px;
+  height: 84vh;
   background-image: url("./img/showcase.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -92,7 +94,7 @@
   color: #333;
 }
 #home-info {
-  height: 400px;
+  height: 56vh;
   display: flex;
 }
 .info-img {
@@ -111,7 +113,8 @@
 }
 .info-content h2 {
   font-size: 24px;
-  padding: 0 0 20px;
+  /* padding: 0 0 20px;
+  overflow-wrap: break-word; */
 }
 .info-content p {
   padding: 0 0 20px;
@@ -160,7 +163,7 @@
   margin: 10px 0;
 }
 #about-info {
-  height: 338.25px;
+  height: 47.5vh;
   max-width: 1100px;
   margin: auto;
   padding: 0 20px;
@@ -247,18 +250,18 @@ input {
 .contact-fields button {
   margin: 30px 0;
 }
-.inner-contact {
-  width: 1100px;
-  padding: 20px 20px;
-  display: flex;
-  justify-content: space-around;
-}
 #contact-info {
   height: 252.4px;
   background-color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.inner-contact {
+  width: 1100px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-around;
 }
 .contact-box {
   color: #fff;
@@ -272,4 +275,135 @@ input {
 }
 .contact-box p {
   margin-top: 30px;
+}
+@media screen and (max-width: 480px) {
+  #navbar {
+    height: 35px;
+  }
+  .container a {
+    font-size: 12px;
+  }
+  .container ul li a {
+    color: #ffffff;
+    display: block;
+    padding: 5px;
+    font-size: 8px;
+    text-align: center;
+  }
+  .container {
+    height: 100%;
+    margin: auto;
+    padding: 0 10px;
+  }
+  #showcase {
+    height: 70vh;
+  }
+  .showcase-content {
+    padding: 50px 20px;
+  }
+  #showcase h1 {
+    font-size: 30px;
+    line-height: 1.2em;
+    padding: 0 0 20px;
+  }
+  #showcase p {
+    display: block;
+    padding: 0 0 14px;
+    font-size: 14px;
+    margin: 7px;
+  }
+  .btn {
+    display: inline-block;
+    font-size: 9px;
+    color: #fff;
+    background: #333;
+    padding: 7px 10px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  }
+  #home-info {
+    flex-direction: column;
+    height: 72vh;
+  }
+  .info-img {
+    width: auto;
+    min-height: 50%;
+  }
+  .info-content {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 25px;
+  }
+  .info-content p {
+    font-size: 10px;
+  }
+  .info-content a {
+    background: #f4f4f4;
+    color: #333;
+  }
+  #features {
+    flex-direction: column;
+  }
+  .box {
+    width: 100%;
+  }
+  #about-info {
+    flex-direction: column;
+    height: 70vh;
+    /* align-items: center;
+    justify-content: center; */
+  }
+  #about-info h1 {
+    font-size: 20px;
+    line-height: 1.2em;
+    padding: 0 0 20px;
+  }
+  #about-info p {
+    display: block;
+    padding: 0 0 14px;
+    font-size: 10px;
+    margin: 7px;
+  }
+  .info-container,
+  .info-right {
+    width: 100%;
+  }
+  .info-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonial-wrapper h2 {
+    font-size: 20px;
+  }
+  .testimonial-wrapper p {
+    font-size: 10px;
+  }
+  #contact-info {
+    height: unset;
+    padding: 30px;
+  }
+  .inner-contact {
+    flex-direction: column;
+  }
+  .phone-icon-box {
+    padding: 30px 0;
+  }
+  .contact-fields h1 {
+    font-size: 20px;
+  }
+  .contact-fields p {
+    font-size: 10px;
+  }
+  .contact-fields label {
+    font-size: 10px;
+  }
+  .textareamessage {
+    height: 100px;
+  }
 }
